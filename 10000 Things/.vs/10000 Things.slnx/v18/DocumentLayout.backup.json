@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ariel\\source\\repos\\10000 Things\\",
+  "WorkspaceRootPath": "C:\\Users\\ariel\\OneDrive\\Documents\\GitHub\\Aes-Comp\\10000 Things\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F09A31D-0657-F543-0D6E-86E32395B952}|10000 Things.csproj|c:\\users\\ariel\\source\\repos\\10000 things\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F09A31D-0657-F543-0D6E-86E32395B952}|10000 Things.csproj|c:\\users\\ariel\\onedrive\\documents\\github\\aes-comp\\10000 things\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F09A31D-0657-F543-0D6E-86E32395B952}|10000 Things.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F09A31D-0657-F543-0D6E-86E32395B952}|10000 Things.csproj|c:\\users\\ariel\\source\\repos\\10000 things\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1F09A31D-0657-F543-0D6E-86E32395B952}|10000 Things.csproj|c:\\users\\ariel\\onedrive\\documents\\github\\aes-comp\\10000 things\\circleobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F09A31D-0657-F543-0D6E-86E32395B952}|10000 Things.csproj|solutionrelative:circleobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F09A31D-0657-F543-0D6E-86E32395B952}|10000 Things.csproj|c:\\users\\ariel\\onedrive\\documents\\github\\aes-comp\\10000 things\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1F09A31D-0657-F543-0D6E-86E32395B952}|10000 Things.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -22,26 +26,42 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ariel\\source\\repos\\10000 Things\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ariel\\OneDrive\\Documents\\GitHub\\Aes-Comp\\10000 Things\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\ariel\\source\\repos\\10000 Things\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ariel\\OneDrive\\Documents\\GitHub\\Aes-Comp\\10000 Things\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-19T21:55:34.585Z"
+              "WhenOpened": "2026-01-19T21:55:34.585Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ariel\\source\\repos\\10000 Things\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ariel\\OneDrive\\Documents\\GitHub\\Aes-Comp\\10000 Things\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ariel\\source\\repos\\10000 Things\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ariel\\OneDrive\\Documents\\GitHub\\Aes-Comp\\10000 Things\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-19T21:55:32.817Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CircleObject.cs",
+              "DocumentMoniker": "C:\\Users\\ariel\\OneDrive\\Documents\\GitHub\\Aes-Comp\\10000 Things\\CircleObject.cs",
+              "RelativeDocumentMoniker": "CircleObject.cs",
+              "ToolTip": "C:\\Users\\ariel\\OneDrive\\Documents\\GitHub\\Aes-Comp\\10000 Things\\CircleObject.cs",
+              "RelativeToolTip": "CircleObject.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwB8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T06:21:35.126Z",
               "EditorCaption": ""
             }
           ]

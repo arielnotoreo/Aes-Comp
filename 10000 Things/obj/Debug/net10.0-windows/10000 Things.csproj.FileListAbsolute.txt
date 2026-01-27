@@ -18,3 +18,24 @@ C:\Users\ariel\source\repos\10000 Things\obj\Debug\net10.0-windows\refint\10000 
 C:\Users\ariel\source\repos\10000 Things\obj\Debug\net10.0-windows\10000 Things.pdb
 C:\Users\ariel\source\repos\10000 Things\obj\Debug\net10.0-windows\10000 Things.genruntimeconfig.cache
 C:\Users\ariel\source\repos\10000 Things\obj\Debug\net10.0-windows\ref\10000 Things.dll
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\bin\Debug\net10.0-windows\10000 Things.exe
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\bin\Debug\net10.0-windows\10000 Things.deps.json
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\bin\Debug\net10.0-windows\10000 Things.runtimeconfig.json
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\bin\Debug\net10.0-windows\10000 Things.dll
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\bin\Debug\net10.0-windows\10000 Things.pdb
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things_MarkupCompile.cache
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things_MarkupCompile.lref
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.g.resources
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.AssemblyInfoInputs.cache
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.AssemblyInfo.cs
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.csproj.CoreCompileInputs.cache
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.sourcelink.json
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.dll
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\refint\10000 Things.dll
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.pdb
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\10000 Things.genruntimeconfig.cache
+C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\10000 Things\obj\Debug\net10.0-windows\ref\10000 Things.dll
