@@ -126,9 +126,6 @@
   <ItemGroup>
     <ClCompile Include="VeraMolnarRecode.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Downloads\simple-svg-master\simple-svg-master\simple_svg_1.0.0.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
