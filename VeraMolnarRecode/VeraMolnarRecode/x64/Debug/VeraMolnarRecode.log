@@ -1,3 +1,3 @@
 ﻿  VeraMolnarRecode.cpp
-C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\VeraMolnarRecode\VeraMolnarRecode\VeraMolnarRecode.cpp(9,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  VeraMolnarRecode.vcxproj -> C:\Users\ariel\OneDrive\Documents\GitHub\Aes-Comp\VeraMolnarRecode\x64\Debug\VeraMolnarRecode.exe
+D:\Profiles\aec9183\Documents\GitHub\Aes-Comp\VeraMolnarRecode\VeraMolnarRecode\VeraMolnarRecode.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  VeraMolnarRecode.vcxproj -> D:\Profiles\aec9183\Documents\GitHub\Aes-Comp\VeraMolnarRecode\x64\Debug\VeraMolnarRecode.exe

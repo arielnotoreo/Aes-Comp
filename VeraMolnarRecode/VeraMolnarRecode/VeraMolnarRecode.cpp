@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <fstream>
 
 using namespace std;
 
@@ -11,29 +12,61 @@ int main()
     const int rows = 20;
     const int cols = 40;
 
-    for (int y = 0; y < rows; y++) 
+    //open svg file
+    ofstream svgFile("veramolnar.svg");
+
+    if (svgFile.is_open())
     {
-        for (int x = 0; x < cols; x++) 
+        // the header?? lowkey dont really know what this means tbh
+        svgFile << "<svg width=\"40\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\">\n";
+
+        for (int y = 0; y < rows; y++)
         {
-            // random interuption
-            if (rand() % 100 < 15) 
+            for (int x = 0; x < cols; x++)
             {
-                cout << "  ";   // blank space
-                continue;
+                // random interuption
+                if (rand() % 100 < 15)
+                {
+                    svgFile << "  ";   // blank space
+                    cout << "  ";
+                    continue;
+                }
+
+                // chosing the line type to give the rotation effect
+                int r = rand() % 4;
+
+                // 4 differnt lines to choose from
+                switch (r)
+                {
+                case 0:
+                    svgFile << "<text x='10' y='30' font-size='20' fill='black'>--</text>";
+                    cout << "--";
+                    break;
+                case 1:
+                    svgFile << "| ";
+                    cout << "|";
+                    break;
+                case 2:
+                    svgFile << "/ ";
+                    cout << "/";
+                    break;
+                default:
+                    svgFile << "\\";
+                    cout << "\\";
+                    break;
+                }
             }
-
-            // chosing the line type to give the rotation effect
-            int r = rand() % 4;
-
-            // 4 differnt lines to choose from
-            if (r == 0) cout << "--";
-            else if (r == 1) cout << "| ";
-            else if (r == 2) cout << "/ ";
-            else cout << "\\ ";
-
         }
-        cout << endl;
-    }
 
+        svgFile << "</svg>";
+        svgFile.close();
+
+        cout << "file created" << endl;
+    }
+    else
+    {
+        cerr << "error opening file" << endl;
+    }
+   
     return 0;
 }

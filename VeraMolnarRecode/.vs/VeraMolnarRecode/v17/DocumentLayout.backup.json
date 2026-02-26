@@ -5,9 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2C18570-C88C-4184-A276-7819CEA57562}|VeraMolnarRecode\\VeraMolnarRecode.vcxproj|D:\\Profiles\\aec9183\\Documents\\GitHub\\Aes-Comp\\VeraMolnarRecode\\VeraMolnarRecode\\VeraMolnarRecode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2C18570-C88C-4184-A276-7819CEA57562}|VeraMolnarRecode\\VeraMolnarRecode.vcxproj|solutionrelative:VeraMolnarRecode\\VeraMolnarRecode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\aec9183\\Downloads\\simple-svg-master\\simple-svg-master\\main_1.0.0.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main_1.0.0.cpp",
-              "DocumentMoniker": "D:\\Profiles\\aec9183\\Downloads\\simple-svg-master\\simple-svg-master\\main_1.0.0.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\simple-svg-master\\simple-svg-master\\main_1.0.0.cpp",
-              "ToolTip": "D:\\Profiles\\aec9183\\Downloads\\simple-svg-master\\simple-svg-master\\main_1.0.0.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\simple-svg-master\\simple-svg-master\\main_1.0.0.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-24T17:13:14.499Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,14 +24,10 @@
               "RelativeDocumentMoniker": "VeraMolnarRecode\\VeraMolnarRecode.cpp",
               "ToolTip": "D:\\Profiles\\aec9183\\Documents\\GitHub\\Aes-Comp\\VeraMolnarRecode\\VeraMolnarRecode\\VeraMolnarRecode.cpp",
               "RelativeToolTip": "VeraMolnarRecode\\VeraMolnarRecode.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-24T17:05:04.652Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
