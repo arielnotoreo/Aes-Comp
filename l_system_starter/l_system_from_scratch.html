@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<svg> width="400" height 400 viewBox="0 0 400 400" </svg>
+
+<script>
+    const axiom = 'F';
+
+    const rules = {
+        'F': [
+            'F+G',
+            'G-F'
+        ],
+        'G': [
+            'G-F',
+            'G+F',
+        ]
+    };
+    
+    const expand = (lSystemString) => {
+        // expand one string
+        // F+G => F+G+G+F
+        let expandedString = ' ';
+
+        for (let i = 0; i < lSystemString.length; i++) {
+            let char = lSystemString[i];
+
+            let rulesForChar = rules[char] || char;
+            const choice = rulesForChar[Math.floor(Math.random() * rulesForChar)];
+
+            expandedString += rules[char] || char;
+        }
+
+        return expandedString;
+    }
+
+    //const expandTimes = (n, )
+
+    const svg = document.querySelector('svg');
+    const renderFAndGSystem = (lSystemString) => {
+        let svgString = ' ';
+
+        let currentY = 10;
+
+        for (let i = 0; i < lSystemString.length; i++) {
+            let char = lSystemString[i];
+
+            if (char === 'F') {
+                svgString += `'<line x1="10" x2="10" y1="${currentY}" y2="${currentY}" stroke="black">'`;
+            }
+            if (char === 'G') {
+                svgString += `'<line x1="10" x2="10" y1="${currentY}" y2="${currentY}" stroke="black">'`;
+            }
+            if (char === '+') {
+                currentY += 10;
+            }
+            if (char === '-') {
+                currentY -= 10;
+            }            
+        }
+
+        svg.innerHTML = svgString;
+    }
+
+    let expandedexpandTimes(6, axiom);
+
+    console.log(expanded);
+</script>
+<body>
+    
+</body>
+</html>
