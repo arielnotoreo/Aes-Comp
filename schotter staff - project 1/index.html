@@ -5,20 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - Schotter's Staff</title>
 </head>
-  <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"></svg>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"></svg>
+
+    <label id="selector" for="noteSelect">Note Type</label>
+    <select id = noteSelect>
+        <option value="quarter">quarter note</option>
+        <option value="half">half note</option>
+        <option value="whole">whole note</option>
+    </select>
+</body>
 <script>
-    const width = 200;
-    const height = 400;
+    const width = 800;
+    const height = 800;
     
-    const tileSize = 15;
+    const tileSize = 40;
     const columns = Math.floor(width / tileSize);
     const rows = Math.floor(height / tileSize);
 
     const svg = document.querySelector("svg");
 
-    
+    let svgLink = "http://www.w3.org/2000/svg";
+
+    const noteSelect = document.getElementById("selector");
+
+    noteSelect.addEventListener("change", (event) => {
+        console.log("Selected value:", event.target.value);
+    });
+
+    function quarterNotes() {
+        const group = document.createElementNS(svgLink, "g");
+
+        // drawing the staff lines
+        const line = document.createElementNS(svgLink, "line");
+        line.setAttribute("x1", 0);
+        line.setAttribute("y1", 8);
+        line.setAttribute("x2", tileSize);
+        line.setAttribute("y2", 8);
+        line.setAttribute("stroke", "black");
+        group.appendChild(line);
+
+        // note head
+        const note = document.createElementNS(svgLink, "circle");
+        note.setAttribute("cx", tileSize/2);
+        note.setAttribute("cy", 8);
+        note.setAttribute("r", 4);
+        note.setAttribute("fill", "black");
+
+        group.appendChild(note);
+
+        // stem
+        const stem = document.createElementNS(svgLink, "line");
+        stem.setAttribute("x1", tileSize / 2 + 4);
+        stem.setAttribute("y1", 8);
+        stem.setAttribute("x2", tileSize / 2 + 4);
+        stem.setAttribute("y2", -10);
+        stem.setAttribute("stroke", "black");
+
+        group.appendChild(stem);
+
+        return group;
+    }
+
+    for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < columns; col++) {
+            const g = quarterNotes();
+
+            const baseX = col * tileSize;
+            const baseY = row * tileSize;
+
+            const random = row / rows;
+
+            const offsetX = (Math.random() - 0.5) * 20 * random;
+            const offsetY = (Math.random() - 0.5) * 20 * random;
+            const rotation = (Math.random() - 0.5) * 20 * random;
+
+            const transform = `
+                translate(${baseX + offsetY}, ${baseY + offsetY})
+                rotate(${rotation}, ${tileSize / 2}, ${tileSize / 2})
+            `;
+
+            g.setAttribute("transform", transform);
+
+            svg.appendChild(g);
+        }
+    }
 </script>
-<body>
-    
-</body>
 </html>
