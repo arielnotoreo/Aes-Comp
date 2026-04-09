@@ -11,7 +11,7 @@ import { Manifold, CrossSection, show, color } from '../lib/viewer.js';
 // ── 1. PRIMITIVES ─────────────────────────────────────
 
 // Cube — corner at origin by default
-// show(Manifold.cube([20, 20, 20]));
+//show(Manifold.cube([20, 20, 20]));
 
 // Cube — centered on origin
 // show(Manifold.cube([20, 20, 20], true));

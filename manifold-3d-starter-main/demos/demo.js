@@ -15,7 +15,7 @@ const doll = (r) => {
 
   const innerR = cavity * 0.75;
   const inner = doll(innerR)
-    .translate([0, -(cavity - innerR), 0]);
+    .translate([0, -(cavity - innerR), 0]); 
 
   return Manifold.union([shell, inner]);
 };
