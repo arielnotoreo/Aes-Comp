@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - Schotter's Staff</title>
 </head>
+
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"></svg>
 
     <label id="selector" for="noteSelect">Note Type</label>
-    <select id = noteSelect>
+    <select id=noteSelect>
         <option value="quarter">quarter note</option>
         <option value="half">half note</option>
         <option value="whole">whole note</option>
@@ -18,7 +20,7 @@
 <script>
     const width = 800;
     const height = 800;
-    
+
     const tileSize = 40;
     const columns = Math.floor(width / tileSize);
     const rows = Math.floor(height / tileSize);
@@ -27,7 +29,7 @@
 
     let svgLink = "http://www.w3.org/2000/svg";
 
-    const noteSelect = document.getElementById("selector");
+    const noteSelect = document.getElementById("noteSelect");
 
     noteSelect.addEventListener("change", (event) => {
         console.log("Selected value:", event.target.value);
@@ -47,22 +49,30 @@
 
         // note head
         const note = document.createElementNS(svgLink, "circle");
-        note.setAttribute("cx", tileSize/2);
+        note.setAttribute("cx", tileSize / 2);
         note.setAttribute("cy", 8);
         note.setAttribute("r", 4);
-        note.setAttribute("fill", "black");
+
+        if (noteSelect.value == "quarter") {
+            note.setAttribute("fill", "black");
+        }
+        else {
+            note.setAttribute("fill", "none");
+        }
 
         group.appendChild(note);
 
         // stem
-        const stem = document.createElementNS(svgLink, "line");
-        stem.setAttribute("x1", tileSize / 2 + 4);
-        stem.setAttribute("y1", 8);
-        stem.setAttribute("x2", tileSize / 2 + 4);
-        stem.setAttribute("y2", -10);
-        stem.setAttribute("stroke", "black");
+        if (noteSelect.value != "whole") {
+            const stem = document.createElementNS(svgLink, "line");
+            stem.setAttribute("x1", tileSize / 2 + 4);
+            stem.setAttribute("y1", 8);
+            stem.setAttribute("x2", tileSize / 2 + 4);
+            stem.setAttribute("y2", -10);
+            stem.setAttribute("stroke", "black");
 
-        group.appendChild(stem);
+            group.appendChild(stem);
+        }
 
         return group;
     }
@@ -91,4 +101,5 @@
         }
     }
 </script>
+
 </html>
