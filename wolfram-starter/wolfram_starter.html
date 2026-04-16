@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wolfram CA</title>
+  <style>
+    body {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    canvas {
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="c" width="400" height="400"></canvas>
+  <script>
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    
+    // Seed: one cell in the middle
+    let row = new Array(width).fill(0);
+    row[Math.floor(width / 2)] = 1;
+
+    // Seed: Random 20% of cells
+    for (let i = 0; i < width; i++) {
+      if (Math.random() < 0.2) {
+        row[i] = 1;
+      }
+    }
+
+
+
+
+    
+
+
+
+
+    // Draw every row, top to bottom
+    const img = ctx.createImageData(width, height);
+
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const i = (y * width + x) * 4;
+        
+        const alive = row[x];
+        const color = alive ? 255 : 0;
+
+        img.data[i] = color;
+        img.data[i + 1] = color;
+        img.data[i + 2] = color;
+        img.data[i + 3] = 255;
+      }
+      row = step(row);
+    }
+
+    ctx.putImageData(img, 0, 0);
+  </script>
+</body>
+
+</html>

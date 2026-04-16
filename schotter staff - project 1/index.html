@@ -10,8 +10,8 @@
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"></svg>
 
-    <label id="selector" for="noteSelect">Note Type</label>
-    <select id=noteSelect>
+    <label for="noteSelect">Note Type</label>
+    <select id="noteSelect">
         <option value="quarter">quarter note</option>
         <option value="half">half note</option>
         <option value="whole">whole note</option>
@@ -30,12 +30,9 @@
     let svgLink = "http://www.w3.org/2000/svg";
 
     const noteSelect = document.getElementById("noteSelect");
+    let noteType = noteSelect.value;
 
-    noteSelect.addEventListener("change", (event) => {
-        console.log("Selected value:", event.target.value);
-    });
-
-    function quarterNotes() {
+    function musicNotes() {
         const group = document.createElementNS(svgLink, "g");
 
         // drawing the staff lines
@@ -53,17 +50,18 @@
         note.setAttribute("cy", 8);
         note.setAttribute("r", 4);
 
-        if (noteSelect.value == "quarter") {
+        if (noteType == "quarter") {
             note.setAttribute("fill", "black");
         }
         else {
+            note.setAttribute("stroke", "black");
             note.setAttribute("fill", "none");
         }
 
         group.appendChild(note);
 
         // stem
-        if (noteSelect.value != "whole") {
+        if (noteType != "whole") {
             const stem = document.createElementNS(svgLink, "line");
             stem.setAttribute("x1", tileSize / 2 + 4);
             stem.setAttribute("y1", 8);
@@ -77,29 +75,45 @@
         return group;
     }
 
-    for (let row = 0; row < rows; row++) {
-        for (let col = 0; col < columns; col++) {
-            const g = quarterNotes();
+    function drawNotes() {
+        svg.innerHTML = ""; // clear the svg panel
 
-            const baseX = col * tileSize;
-            const baseY = row * tileSize;
+        for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < columns; col++) {
+                const g = musicNotes();
 
-            const random = row / rows;
+                const baseX = col * tileSize;
+                const baseY = row * tileSize;
 
-            const offsetX = (Math.random() - 0.5) * 20 * random;
-            const offsetY = (Math.random() - 0.5) * 20 * random;
-            const rotation = (Math.random() - 0.5) * 20 * random;
+                const random = row / rows;
 
-            const transform = `
-                translate(${baseX + offsetY}, ${baseY + offsetY})
+                const offsetX = (Math.random() - 1) * 40 * random;
+                const offsetY = (Math.random() - 1) * 80 * random;
+                const rotation = (Math.random() - 1) * 120 * random;
+
+                const transform = `
+                translate(${baseX + offsetX}, ${baseY + offsetY})
                 rotate(${rotation}, ${tileSize / 2}, ${tileSize / 2})
             `;
 
-            g.setAttribute("transform", transform);
+                g.setAttribute("transform", transform);
 
-            svg.appendChild(g);
+                svg.appendChild(g);
+            }
         }
     }
+
+    // update svg with drop down select
+    noteSelect.addEventListener("change", (event) => {
+        console.log("Selected value:", event.target.value);
+        noteType = event.target.value;
+        drawNotes();
+    });
+
+    window.onload = function () {
+        noteType = noteSelect.value;
+        drawNotes();
+    };
 </script>
 
 </html>
